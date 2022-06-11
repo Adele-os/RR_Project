@@ -1,8 +1,6 @@
 Untitled
 ================
 
-`{r setup, include=FALSE} knitr::opts_chunk$set(echo = TRUE)`
-
 ## GitHub Documents
 
 This is an R Markdown format used for publishing markdown documents to
