@@ -35,15 +35,16 @@ investors.
 The data for the paper can be found
 [here](https://github.com/tomvar/Cognitive_Biases_on_the_Iran_Stock_Exchange).
 The newly gathered data from the recent survey can be found in [this
-folder](). 32 investors participated in the survey through Google Forms
-during May 2022 in which they were the stock market holders in TSE
-(Tehran Stock Exchange)
+folder](https://github.com/SaeedPourjafar/RR_Project/tree/main/in). 32
+investors participated in the survey through Google Forms during May
+2022 in which they were the stock market holders in TSE (Tehran Stock
+Exchange)
 
 ### Folder structure
 
     .
     ├── in                         # Input folder for survey's data
-    │   ├── data.csv               # Surveyed data from the investors in May 2022
+    │   ├── survey_data.csv        # Surveyed data from the investors in May 2022
     └──
     ├── src                        # Source files
     │   ├── comparitive_analysis.R # R file for analysis
