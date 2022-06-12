@@ -1,30 +1,56 @@
-## R Markdown
+## Reproducible Reserach Project
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
+This is the repository for the RR course project. In this project we
+aimed to recalculate the results of the paper [Cognitive Biases on the
+Iran Stock Exchange: Unsupervised Learning Approach to Examining Feature
+Bundles in Investors’
+Portfolios](https://www.mdpi.com/2076-3417/11/22/10916) which has been
+done by **Adele Ossareh**, **Mohammad Saeed Pourjafar** and **Dr. Tomasz
+Kopczewski** and published in journal of applied science in November
+2021.
 
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+### The paper
 
-``` r
-summary(cars)
-```
+The paper innovatively analyses the joint occurrence of cognitive biases
+in groups of stock exchange investors in Tehran Stock Exchange (TSE). It
+considers jointly a number of common fallacies: confirmation bias, loss
+aversion, gambler’s fallacy, availability cascade, hot-hand fallacy,
+bandwagon effect, and Dunning–Kruger effect, which have hitherto been
+studied separately. The paper aims to highlight the diverse range of
+investor’s profiles which are characterised by such fallacies, and the
+considerable differences observed based on their age, gender, stock
+market experience and perception of market trends.
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+### The aim of RR project
 
-## Including Plots
+In this project we are trying to gather new observations based on new
+surveyed data to do the comparison between the results of the original
+paper and the result of the newly gathered data. The justification is
+that Iran’s economy has been through a major changes ever since we
+published the paper and we want to examine the change from the point of
+investors.
 
-You can also embed plots, for example:
+### Data
 
-![](test_files/figure-markdown_github/pressure-1.png)
+The data for the paper can be found
+[here](https://github.com/tomvar/Cognitive_Biases_on_the_Iran_Stock_Exchange).
+The newly gathered data from the recent survey can be found in [this
+folder](). 32 investors participated in the survey through Google Forms
+during May 2022 in which they were the stock market holders in TSE
+(Tehran Stock Exchange)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+### Folder structure
+
+    .
+    ├── in                         # Input folder for survey's data
+    │   ├── data.csv               # Surveyed data from the investors in May 2022
+    └──
+    ├── src                        # Source files
+    │   ├── comparitive_analysis.R # R file for analysis
+    │   ├── func.R                 # Functions
+    └──
+    ├── out                        # Presentation
+    │   ├── presentation.RMD       # RMarkdown for presentation
+    └──
+    ├── LICENSE
+    └── README.md
