@@ -50,7 +50,8 @@ $$
 in which the **CPI** is consumer price index in current period,
 ***C*<sub>*t*</sub>** is cost of market basket in current period and
 ***C*<sub>0</sub>** is cost of market basket in base period. This
-increase in CPI has also been reflected in Iran’s central bank report:
+increase in **CPI** has also been reflected in Iran’s central bank
+report:
 
 <center>
 <img src="https://github.com/SaeedPourjafar/RR_Project/blob/main/fig/Iran_CPI.png">
@@ -69,15 +70,19 @@ Exchange)
 ### Folder structure
 
     .
-    ├── in                         # Input folder for survey's data
-    │   ├── survey_data.csv        # Surveyed data from the investors in May 2022
+    ├── fig                           # Folder for images and figures
+    │   ├── Iran_CPI.png              # Iran's CPI graph
     └──
-    ├── src                        # Source files
-    │   ├── comparitive_analysis.R # R file for analysis
-    │   ├── func.R                 # Functions
+    ├── in                            # Input folder for survey's data
+    │   ├── survey_data.csv           # Surveyed data from the investors in May 2022
     └──
-    ├── out                        # Presentation
-    │   ├── presentation.RMD       # RMarkdown for presentation
+    ├── src                           # Source files
+    │   ├── comparative_analysis.R    # R file for analysis
+    │   ├── func.R                    # Functions
+    └──
+    ├── out                           # Presentation
+    │   ├── presentation.RMD          # RMarkdown for presentation
+    │   ├── presentation.HTML         # HTML for presentation
     └──
     ├── LICENSE
     └── README.md
