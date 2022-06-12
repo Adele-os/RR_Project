@@ -41,12 +41,26 @@ from today’s situation (June 2022), is
 [CPI](https://en.wikipedia.org/wiki/Consumer_price_index) which can be
 calculated as:
 
-$CPI=\\frac{C_t}{C_0}\*100$
+$$
+\\begin{aligned}
+CPI=\\frac{C_t}{C_0}\*100
+\\end{aligned}
+$$
 
 in which the *C**P**I* is consumer price index in current period,
 *C*<sub>*t*</sub> is cost of market basket in current period and
-*C*<sub>0</sub> is cost of market basket in base period. ##\# Data The
-data for the paper can be found
+*C*<sub>0</sub> is cost of market basket in base period. This increase
+in CPI has also been reflected in Iran’s central bank report:
+
+<iframe src="https://d3fy651gv2fhd3.cloudfront.net/embed/?s=irani.r.conpriindcp&amp;v=202205300204V20220312&amp;d1=19970618&amp;h=300&amp;w=600" height="300" width="600" frameborder="0" scrolling="no">
+</iframe>
+
+<br />source:
+<a href='https://tradingeconomics.com/iran/consumer-price-index-cpi'>tradingeconomics.com</a>
+
+### Data
+
+The data for the paper can be found
 [here](https://github.com/tomvar/Cognitive_Biases_on_the_Iran_Stock_Exchange).
 The newly gathered data from the recent survey can be found in [this
 folder](https://github.com/SaeedPourjafar/RR_Project/tree/main/in). 32
