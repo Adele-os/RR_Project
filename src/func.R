@@ -4,6 +4,10 @@ library(rcompanion)    # library for pairwise Mood's median tests
 library(types)         # library for type annotation in functions
 
 
+# a function for running pairwise Mood's test for all n Bootstrap samples 
+# It takes the dataframe, name of variable (column) to compare
+# and name of column which includes the group each case assigned to. 
+
 bootstrap.p <- function(df, 
                         col.name = ? character,
                         col.group = ? character, 
