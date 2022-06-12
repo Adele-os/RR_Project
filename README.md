@@ -52,7 +52,9 @@ in which the **CPI** is consumer price index in current period,
 ***C*<sub>0</sub>** is cost of market basket in base period. This
 increase in CPI has also been reflected in Iran’s central bank report:
 
-<img src="C:\Users\Saeed\Documents\GitHub\RR_Project\fig\Iran_CPI.png" width="100%" />
+<center>
+<img src="https://github.com/SaeedPourjafar/RR_Project/blob/main/fig/Iran_CPI.png">
+</center>
 
 ### Data
 
