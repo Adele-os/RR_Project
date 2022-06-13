@@ -12,7 +12,7 @@ output:
       slideNumberFormat: "%current%"
       highlightStyle: github
       highlightLines: true
-      ratio: 16:9
+      ratio: 16:10
       countIncrementalSlides: true
 params:
   table1 : table1
@@ -84,11 +84,11 @@ style_duo(title_slide_text_color='#FAF9F6')
 .right-column[
 *   #### Structure
 *   #### Codes and functions
-*   #### Conclusion
+*   #### Documentation
 ]
 
 ---
-name: bg
+name: bg1
 
 # Background
 
@@ -104,6 +104,134 @@ Data acquisition
 
 .right-column[
 In this project we aimed to recalculate the results of the paper [Cognitive Biases on the Iran Stock Exchange: Unsupervised Learning Approach to Examining Feature Bundles in Investors' Portfolios](http://mdpi.com/2076-3417/11/22/10916) which has been done by Adele Ossareh, Mohammad Saeed Pourjafar and Dr. Tomasz Kopczewski and published in journal of applied science. We launched a new survey and tried to compare the recent results with the original findings in the paper to identify new behavioral patterns if any. 
+]
+
+---
+
+name: bg2
+
+# Background
+
+.left-column[
+Project description
+
+**Paper summary**
+
+Justification
+
+Data acquisition
+]
+
+.right-column[
+The paper innovatively analyses the joint occurrence of cognitive biases in groups of stock exchange investors in Tehran Stock Exchange (TSE). It considers jointly a number of common fallacies, which have hitherto been studied separately. The paper aims to highlight the diverse range of investor's profiles which are characterised by such fallacies, and the considerable differences observed based on their age, gender, stock market experience and perception of market trends. The biases are as follow:
+
+*   Confirmation bias
+*   Loss aversion
+*   Gambler's fallacy
+*   Availability cascade
+*   Hot-hand fallacy
+*   Bandwagon effect
+*   Dunning-Kruger effect
+]
+
+---
+
+name: bg3
+
+# Background
+
+.left-column[
+Project description
+
+Paper summary
+
+**Justification**
+
+Data acquisition
+]
+
+.right-column[
+The reason for us to choose investgate on this project is that Iran's economy has been through a major changes ever since we published the paper and we want to examine the change from the point of investors. For this purpose of change in investors' view on TSE, one of the measure we use to distinguish the previous state of Iran's economy from today's situation (June 2022), is **CPI** which can be calculated as:
+
+$$
+\begin{aligned}
+CPI=\frac{C_t}{C_0}*100
+\end{aligned}
+$$
+in which the $CPI$ is consumer price index in current period, $C_t$ is cost of market basket in current period and $C_0$ is cost of market basket in base period. This increase in $CPI$ has also been reflected in Iran's central bank report:
+
+]
+
+---
+
+name: bg4
+
+# Background
+
+.left-column[
+Project description
+
+Paper summary
+
+**Justification**
+
+Data acquisition
+]
+
+![Iran_CPI](C:/Users/Saeed/Documents/GitHub/RR_Project/fig/Iran_CPI.png)
+
+.footnote[Iran's increasing CPI based on central bank data]
+
+---
+name: bg5
+
+# Background
+
+.left-column[
+Project description
+
+Paper summary
+
+**Justification**
+
+Data acquisition
+]
+![Yahoo](C:/Users/Saeed/Documents/GitHub/RR_Project/fig/NY_Yahoo.png)
+
+---
+name: bg6
+
+# Background
+
+.left-column[
+Project description
+
+Paper summary
+
+Justification
+
+**Data acquisition**
+]
+
+.right-column[
+The data for the paper can be found [here](https://github.com/tomvar/Cognitive_Biases_on_the_Iran_Stock_Exchange). The newly gathered data from the recent survey can be found in [this folder](https://github.com/SaeedPourjafar/RR_Project/tree/main/in). 32 investors participated in the survey through Google Forms during May 2022 in which they were the stock market holders in TSE (Tehran Stock Exchange)    
+]
+
+---
+name: an1
+
+# Analysis
+
+.left-column[
+**Methodology**
+
+Comparisons
+
+Conclusion
+]
+
+.right-column[
+a placeholder for methodology 
 ]
 
 ---
