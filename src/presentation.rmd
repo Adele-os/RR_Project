@@ -1,0 +1,68 @@
+---
+title: "RR_Project"
+author: "Adele Ossareh, Mohammad Saeed Pourjafar"
+date: "6/15/2022"
+output: ioslides_presentation
+params:
+  table1 : table1
+  table2 : table2
+  table3 : table3
+---
+
+
+```{r echo = F}
+knitr::opts_chunk$set(cache = F,
+                      fig.align = 'center', 
+                      echo = F,
+                      error = F,
+                      message = F,
+                      warning = F)
+options(warn=-1)
+```
+
+
+```{r}
+library(kableExtra)
+library(dplyr)
+```
+
+## Introduction
+
+## data
+
+## Current situation in Iran
+
+## Gender Comparison
+
+```{r echo=FALSE}
+
+params$table1 %>% 
+  kbl() %>%
+  kable_classic(full_width = T, html_font = "Cambria") %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                font_size = 22)
+
+```
+
+## Age Comparison
+
+```{r echo=FALSE}
+params$table2 %>%
+  kbl() %>%
+  kable_classic(full_width = T, html_font = "Cambria") %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+## Experience Comparison
+
+```{r echo=FALSE}
+params$table3 %>% 
+  kbl() %>%
+  kable_classic(full_width = T, html_font = "Cambria") %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+
+
+
+
