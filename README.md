@@ -79,9 +79,9 @@ Exchange)
     ├── src                           # Source files
     │   ├── comparative_analysis.R    # R file for analysis
     │   ├── func.R                    # Functions
+    │   ├── presentation.RMD          # RMarkdown for presentation
     └──
     ├── out                           # Presentation
-    │   ├── presentation.RMD          # RMarkdown for presentation
     │   ├── presentation.HTML         # HTML for presentation
     └──
     ├── LICENSE
