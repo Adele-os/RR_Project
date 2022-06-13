@@ -6,7 +6,7 @@ author:
   - "M.Saeed Pourjafar"
 date: '`r Sys.Date()`'
 output:
-  xaringan::tsukuyomi:
+  xaringan::moon_reader:
     css: xaringan-themer.css
     nature:
       slideNumberFormat: "%current%"
@@ -34,8 +34,10 @@ knitr::opts_chunk$set(
 ```
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(kableExtra)
+library(dplyr)
 library(xaringanthemer)
-style_duo(title_slide_text_color='#FAF9F6')
+style_duo()
 ```
 
 # Agenda
@@ -231,7 +233,117 @@ Conclusion
 ]
 
 .right-column[
-a placeholder for methodology 
+**Hypothesis:** TSE investors' behaviors are statistically different regarding their sex, age and experience. 
+
+**Statistical population:** All the investors of Tehran stock exchange
+
+**Sample size:** The sample size for reproducing our research is 32 investors. (It was 104 investors in our main research.)   
+
+**Sampling method:** Simple random sampling
+
+**Data gathering tool:** A questionnaire which evaluates investors' behaviors in different situations.
+
+**Year collected:** 2022 (The main research was conducted in early 2021)
+
+**Statistical methods:** Bootstrapping, Mood's median test, post-hoc tests
+]
+
+
+---
+name: an2
+
+# Analysis
+
+.left-column[
+Methodology
+
+**Comparisons**
+
+Conclusion
+]
+
+.right-column[
+
+```{r echo=FALSE}
+color.me <- which( (params$table1)$'p-Value'<0.05)
+params$table1 %>% 
+  kbl() %>%
+  kable_classic(full_width = T, html_font = "Cambria") %>% 
+  kable_styling(bootstrap_options = c("hover", "condensed"),
+                font_size = 22) %>% 
+  row_spec(color.me, color = "black", background = "#fffd8d")
+
+```
+]
+.footnote[Table 1. Sex comparison results]
+---
+name: an3
+
+# Analysis
+
+.left-column[
+Methodology
+
+**Comparisons**
+
+Conclusion
+]
+
+.right-column[
+
+```{r echo=FALSE}
+color.me <- which( (params$table2)$'p-Value'<0.05)
+
+params$table2 %>%
+  kbl() %>%
+  kable_classic(full_width = T, html_font = "Cambria") %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                font_size = 22) %>% 
+  row_spec(color.me, color = "black", background = "#fffd8d")
+```                
+]
+.footnote[Table 2. Age comparison results]
+---
+name: an4
+
+# Analysis
+
+.left-column[
+Methodology
+
+**Comparisons**
+
+Conclusion
+]
+.right-column[
+
+```{r echo=FALSE}
+color.me <- which((params$table3)$'p-Value'<0.05)
+
+params$table3 %>% 
+  kbl() %>%
+  kable_classic(full_width = T, html_font = "Cambria") %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
+                font_size = 22) %>% 
+  row_spec(color.me, color = "black", background = "#fffd8d")
+```
+
+]
+.footnote[Table 3. Experience comparison results]
+---
+name: an5
+
+# Analysis
+
+.left-column[
+Methodology
+
+**Comparisons**
+
+Conclusion
+]
+
+.right-column[
 ]
 
 ---
@@ -403,16 +515,16 @@ venenatis urna cursus eget nunc scelerisque viverra.
 <!-- --- -->
 <!-- layout: true -->
 
-<!-- ## Tables -->
+## Tables
 
-<!-- --- -->
-<!-- exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"` -->
+---
+exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"`
 
-<!-- ```{r eval=requireNamespace("tibble", quietly=TRUE)} -->
-<!-- tibble::as_tibble(mtcars) -->
-<!-- ``` -->
+```{r eval=requireNamespace("tibble", quietly=TRUE)}
+tibble::as_tibble(mtcars)
+```
 
-<!-- --- -->
+---
 
 <!-- ```{r} -->
 <!-- knitr::kable(head(mtcars), format = 'html') -->
