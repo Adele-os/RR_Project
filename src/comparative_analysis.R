@@ -131,6 +131,15 @@ names(table2) <- c("Fallacy", "<35", "36-45", ">45", "p-Value")
 table2
 
 
+# pairwise Mood's median tests across groups
+post.hoc <- pairwiseMedianTest(b_loss ~ age, data=data.boot2[1:N,],  exact  = T,
+                               digits = 3, method = "bonferroni")
+
+# letter display for lists of comparisons
+cldList(comparison = post.hoc$Comparison,
+        p.value    = post.hoc$p.adjust, threshold  = 0.05)
+
+
 # experience comparison ---------------------------------------------------
 
 ## Confirmation Bias
@@ -176,3 +185,12 @@ table3 <- table3[,c(6,1:5)]
 names(table3) <- c("Fallacy", "<3", "3-5", "5-10", ">10", "p-Value")
 
 table3
+
+# pairwise Mood's median tests across groups
+post.hoc2 <- pairwiseMedianTest(b_loss ~ experience, data=data.boot2[1:N,],  exact  = T,
+                                digits = 3, method = "bonferroni")
+
+# letter display for lists of comparisons
+cldList(comparison = post.hoc2$Comparison,
+        p.value    = post.hoc2$p.adjust, threshold  = 0.05) 
+
