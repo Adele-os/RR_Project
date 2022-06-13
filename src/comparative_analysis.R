@@ -14,13 +14,14 @@ dim(data1)
 # Bootstrapping -----------------------------------------------------------
 
 # the number of resampling for Bootstrapping 
-n <- 50
+n <- 100
 
 # size of each sample
-N <- nrow(data1)*4
+N <- 100
 
 # resampling process (Bootstrapping)
 ## first sample
+set.seed(6)
 data.boot2 <- data1[sample(1:nrow(data1), N, rep=T),]
 
 ## next samples
@@ -187,10 +188,25 @@ names(table3) <- c("Fallacy", "<3", "3-5", "5-10", ">10", "p-Value")
 table3
 
 # pairwise Mood's median tests across groups
-post.hoc2 <- pairwiseMedianTest(b_loss ~ experience, data=data.boot2[1:N,],  exact  = T,
+post.hoc2 <- pairwiseMedianTest(b_loss ~ age, data=data.boot2[1:N,],  exact  = T,
                                 digits = 3, method = "bonferroni")
 
 # letter display for lists of comparisons
 cldList(comparison = post.hoc2$Comparison,
         p.value    = post.hoc2$p.adjust, threshold  = 0.05) 
+
+
+# rmd ---------------------------------------------------------------------
+
+rmarkdown::render(
+  input = "src/presentation.Rmd",
+  output_file = "presentation.html",
+  params = list(
+    table1 = table1,
+    table2 = table2,
+    table3 = table3
+  ),
+  output_dir   = "out",
+  encoding     = 'UTF-8'
+)
 
