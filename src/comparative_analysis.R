@@ -131,4 +131,48 @@ names(table2) <- c("Fallacy", "<35", "36-45", ">45", "p-Value")
 table2
 
 
+# experience comparison ---------------------------------------------------
 
+## Confirmation Bias
+b_confirmation.experience <- bootstrap.p(data.boot2, 'b_confirmation', 'experience')
+
+## Loss aversion
+b_loss.experience <- bootstrap.p(data.boot2, 'b_loss', 'experience')
+
+## Gambler's fallacy
+b_gambler.experience <- bootstrap.p(data.boot2, 'b_gambler', 'experience')
+
+## Availability Cascade
+b_availability.experience <- bootstrap.p(data.boot2, 'b_availability', 'experience')
+
+## Hot hand's fallacy
+b_hot_hand.experience <- bootstrap.p(data.boot2, 'b_hot_hand', 'experience')
+
+## Bandwagon effect
+b_bandwagon.experience <- bootstrap.p(data.boot2, 'b_bandwagon', 'experience')
+
+## Dunning-Kruger effect
+b_dunning.experience <- bootstrap.p(data.boot2, 'b_dunning', 'experience')
+
+# put all the results in a table
+table3 <- rbind(
+  round(b_confirmation.experience, 3),
+  round(b_loss.experience, 3),
+  round(b_gambler.experience, 3),
+  round(b_availability.experience, 3),
+  round(b_hot_hand.experience, 3),
+  round(b_bandwagon.experience, 3),
+  round(b_dunning.experience, 3)
+) %>% 
+  as.data.frame() %>% 
+  mutate(
+    Fallacies = c("Confirmation", "Loss aversion", "Gambler's", "Availability",
+                  "Hot hand's", "Bandwagon", "Dunning-Kruger")
+  )
+
+# move the column of names from last column to first 
+table3 <- table3[,c(6,1:5)]
+
+names(table3) <- c("Fallacy", "<3", "3-5", "5-10", ">10", "p-Value")
+
+table3
