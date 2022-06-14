@@ -82,9 +82,10 @@ class: center, middle, inverse, title-slide
 ]
 
 .right-column[
-*   #### Structure
 *   #### Codes and functions
 *   #### Documentation
+*   #### Structure
+
 ]
 
 ---
@@ -501,6 +502,132 @@ Conclusion
 ]
 
 ---
+name: rp1
+
+# Repo
+
+.left-column[
+**Codes and functions**
+
+Documentation
+
+Structure
+]
+.right-column[
+
+```r
+# a function for running pairwise Mood's test for all n Bootstrap samples 
+# It takes the dataframe, name of variable (column) to compare
+# and name of column which includes the group each case assigned to.
+
+bootstrap.p &lt;- function(df, col.name = ? character, 
+                        col.group = ? character, n = 50 ? integer){
+
+  # create an empty dataframe for saving the results of each loop in one row
+  a &lt;- nlevels(as.factor(df[col.group] %&gt;% pull()))
+  result = data.frame(rbind(rep(0,a)), 'p' = 0)
+  
+  for (i in 1:n) {# for-loop for each sample
+    # extract ith sample from whole dataset
+    y &lt;- df[((i-1)*N+1):(N*i), col.name] # assign dependent variable to y
+    x &lt;- df[((i-1)*N+1):(N*i), col.group] # assign independent variable to x
+    
+    # assign the result of ith sample to ith row of "result"
+    result[i,] &lt;- c((aggregate(y, list(x), mean, na.rm=T))$x, # mean per group
+                    ifelse(a==2,
+                           mood.test(y ~ x)$p,           # p-value 2-Sample
+                           mood.medtest(y ~ x)$p.value)  # p-value 3-Sample
+      )}
+  return(apply(result,2,mean))}
+```
+]
+
+---
+
+name: rp2
+
+# Repo
+
+.left-column[
+**Codes and functions**
+
+Documentation
+
+Structure
+]
+
+.right-column[
+
+
+
+```r
+# In order to avoid repeating previous codes in rmd file, 
+# final results have been defined as parameters in rmarkdown file.
+# use render() function for rendering rmd file from src folder 
+# Here, the parameters are table1, table2 and table3 which 
+# are the results of sex, age and experience respectively.
+
+rmarkdown::render(
+  input = "src/presentation.Rmd",
+  output_file = "presentation.html",
+  params = list(
+    table1 = table1,
+    table2 = table2,
+    table3 = table3
+  ),
+  output_dir   = "out"
+)
+```
+]
+
+---
+
+name: rp3
+
+# Repo
+
+.left-column[
+**Codes and functions**
+
+Documentation
+
+Structure
+]
+
+.right-column[
+]
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 &lt;!-- ## Typography --&gt;
 
 &lt;!-- Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`. --&gt;
