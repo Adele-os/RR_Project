@@ -339,12 +339,13 @@ name: an5
 .left-column[
 Methodology
 
-**Comparisons**
+Comparisons
 
-Conclusion
+**Conclusion**
 ]
 
 .right-column[
+Originally we observed that out of this various test based on fallacies, there were 9 tests in which the results differ based on either sex, age and experience. In general we don't observe gambler's, availability and confirmation bias in the newly gathered data. However on the other hand we could see that Dunning-Kruger and loss aversion is still significant.The lack of significant differences from the past cn be related to the stock market bubble that burst and the current economic situation in which the CPI is dramatically increasing and inflation rate records high as the investors become reluctant to invest in TSE and thus the result of the survey and the corresponding test roughly show that no matter in which age, experience level or gender the respondents are, they generally share the same view regarding investing in stock market. 
 ]
 
 ---
