@@ -4,7 +4,7 @@ subtitle: "&#x1f52c; A comparative anlaysis of a scientific paper"
 author: 
   - "Adele Ossareh"
   - "M.Saeed Pourjafar"
-date: '`r Sys.Date()`'
+date: '2022-06-15'
 output:
   xaringan::moon_reader:
     css: xaringan-themer.css
@@ -202,7 +202,7 @@ Data acquisition
 
 
 
-.footnote[Fig 2. Tehran Stock Exchange on News (2020-2021)]
+.footnote[Fig 2. Tehran Stock Exchange on news (2020-2021)]
 ---
 name: bg6
 
@@ -267,7 +267,7 @@ Conclusion
 
 .right-column[
 
-The results of Mood's median tests show that men and women are significantly different in Dunning-Kruger fallacy which was not significant in our main research. In contrast, Gambler's and availability fallacies were significant. 
+The results of Mood's median tests show that **men and women** are significantly different in Dunning-Kruger fallacy which was not significant in our main research. In contrast, gambler's and availability fallacies were significant. 
 
 ```{r echo=FALSE}
 color.me <- which((params$table1)$'p-Value'<0.05)
@@ -347,7 +347,7 @@ Comparisons
 ]
 
 .right-column[
-Originally, we observed that out of this various test based on fallacies, there were 9 tests in which the results differ based on either sex, age and experience. In general we don't observe gambler's, availability and confirmation bias in the newly gathered data. However on the other hand we could see that Dunning-Kruger and loss aversion is still significant.The lack of significant differences from the past cn be related to the stock market bubble that burst and the current economic situation in which the CPI is dramatically increasing and inflation rate records high as the investors become reluctant to invest in TSE and thus the result of the survey and the corresponding test roughly show that no matter in which age, experience level or gender the respondents are, they generally share the same view regarding investing in stock market. 
+Originally, we observed that out of these various tests based on fallacies, there were 9 tests in which the results differ based on either sex, age or experience. In general we don't observe gambler's, availability and confirmation bias in the newly gathered data. However on the other hand we could see that Dunning-Kruger and loss aversion is still significant.The lack of significant differences from the past can be related to the stock market bubble that burst and the current economic situation in which the CPI is dramatically increasing and inflation rate records high as the investors became reluctant to invest in TSE and thus the result of the survey and the corresponding tests roughly show that no matter in which age, experience level or gender the respondents are, they generally share the same view regarding investing in stock market. 
 ]
 ---
 name: rp1
