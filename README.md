@@ -84,7 +84,8 @@ Exchange)
     └──
     ├── out                           # Presentation
     │   ├── presentation.HTML         # HTML for presentation
-    │   ├── xaringan-themer.css       # css for theme presentation    
+    │   ├── xaringan-themer.css       # css for theme presentation   
+    │   ├── presentation_files        # additional CSS settings
     └──
     ├── LICENSE
     └── README.md
