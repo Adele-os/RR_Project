@@ -11,7 +11,7 @@ library(types)         # library for type annotation in functions
 bootstrap.p <- function(df, 
                         col.name = ? character,
                         col.group = ? character, 
-                        n = 50 ? integer){
+                        n = 100 ? integer){
   
   # create an empty dataframe for saving the results of each loop in one row
   a <- nlevels(as.factor(df[col.group] %>% pull()))

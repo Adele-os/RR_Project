@@ -180,9 +180,9 @@ Paper summary
 Data acquisition
 ]
 
-![Iran_CPI](C:/Users/Saeed/Documents/GitHub/RR_Project/fig/Iran_CPI.png)
+![Iran_CPI](https://github.com/SaeedPourjafar/RR_Project/blob/main/fig/Iran_CPI.png?raw=true)
 
-.footnote[Iran's increasing CPI based on central bank data]
+.footnote[Fig 1. Iran's increasing CPI based on central bank data]
 
 ---
 name: bg5
@@ -198,8 +198,11 @@ Paper summary
 
 Data acquisition
 ]
-![Yahoo](C:/Users/Saeed/Documents/GitHub/RR_Project/fig/NY_Yahoo.png)
+![Yahoo](https://github.com/SaeedPourjafar/RR_Project/blob/main/fig/NY_Yahoo.png?raw=true)
 
+
+
+.footnote[Fig 2. Tehran Stock Exchange on News (2020-2021)]
 ---
 name: bg6
 
@@ -264,8 +267,7 @@ Conclusion
 
 .right-column[
 
-The results of Mood's median tests for comparing behavior of males and females for different fallacies is presented in table 1. Regarding these results, it seems that men and women are significantly different in Dunning-Kruger Fallacy which was not significant in our main research. In that research, Gambler's and availability fallacies were significant, though. 
-
+The results of Mood's median tests show that men and women are significantly different in Dunning-Kruger fallacy which was not significant in our main research. In contrast, Gambler's and availability fallacies were significant. 
 
 ```{r echo=FALSE}
 color.me <- which((params$table1)$'p-Value'<0.05)
@@ -292,6 +294,8 @@ Conclusion
 
 .right-column[
 
+Results show that similar to our previous research, different **age groups** are significantly different in loss aversion Fallacy, but confirmation and Hot hand's fallacies are not significant anymore.
+
 ```{r echo=FALSE}
 color.me <- which((params$table2)$'p-Value'<0.05)
 
@@ -316,14 +320,14 @@ Conclusion
 ]
 .right-column[
 
+The results show that similar to our previous research, different **experience** groups are significantly different in loss aversion fallacy, but availability, Bandwagon and Dunning-Kruger fallacies are not significant anymore.
+
 ```{r echo=FALSE}
 color.me <- which((params$table3)$'p-Value'<0.05)
 
 params$table3 %>% 
   kbl() %>%
   kable_classic(full_width = T, html_font = "Cambria") %>% 
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
-                font_size = 22) %>% 
   row_spec(color.me, color = "black", background = "#fffd8d")
 ```
 
@@ -343,7 +347,7 @@ Comparisons
 ]
 
 .right-column[
-Originally we observed that out of this various test based on fallacies, there were 9 tests in which the results differ based on either sex, age and experience. In general we don't observe gambler's, availability and confirmation bias in the newly gathered data. However on the other hand we could see that Dunning-Kruger and loss aversion is still significant.The lack of significant differences from the past cn be related to the stock market bubble that burst and the current economic situation in which the CPI is dramatically increasing and inflation rate records high as the investors become reluctant to invest in TSE and thus the result of the survey and the corresponding test roughly show that no matter in which age, experience level or gender the respondents are, they generally share the same view regarding investing in stock market. 
+Originally, we observed that out of this various test based on fallacies, there were 9 tests in which the results differ based on either sex, age and experience. In general we don't observe gambler's, availability and confirmation bias in the newly gathered data. However on the other hand we could see that Dunning-Kruger and loss aversion is still significant.The lack of significant differences from the past cn be related to the stock market bubble that burst and the current economic situation in which the CPI is dramatically increasing and inflation rate records high as the investors become reluctant to invest in TSE and thus the result of the survey and the corresponding test roughly show that no matter in which age, experience level or gender the respondents are, they generally share the same view regarding investing in stock market. 
 ]
 ---
 name: rp1
@@ -431,12 +435,14 @@ Codes and functions
 ]
 
 .right-column[
-![tree](C:/Users/Saeed/Documents/GitHub/RR_Project/fig/tree.png)
+![tree](https://github.com/Adele-os/RR_Project/blob/main/fig/tree.png?raw=true)
 ]
+
+.footnote[Fig 3. Tree structure of the repository]
+
 ---
 # Thanks!
 
 Slides and codes can be found in our repositories:
-
-[**Adele**](https://github.com/Adele-os/RR_Project)<br>
-[*Saeed**](https://github.com/SaeedPourjafar/RR_Project)
+[*Adele Ossareh*](https://github.com/Adele-os/RR_Project) or 
+[*M. Saeed Pourjafar*](https://github.com/SaeedPourjafar/RR_Project)
