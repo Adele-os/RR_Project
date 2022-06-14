@@ -198,6 +198,12 @@ cldList(comparison = post.hoc2$Comparison,
 
 # rmd ---------------------------------------------------------------------
 
+# In order to avoid repeating previous codes in rmd file, 
+# final results have been defined as parameters in rmarkdown file.
+# use render() function for rendering rmd file from src folder 
+# Here, the parameters are table1, table2 and table3 which 
+# are the results of sex, age and experience respectively.
+
 rmarkdown::render(
   input = "src/presentation.Rmd",
   output_file = "presentation.html",
