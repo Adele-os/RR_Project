@@ -264,13 +264,14 @@ Conclusion
 
 .right-column[
 
+The results of Mood's median tests for comparing behavior of males and females for different fallacies is presented in table 1. Regarding these results, it seems that men and women are significantly different in Dunning-Kruger Fallacy which was not significant in our main research. In that research, Gambler's and availability fallacies were significant, though. 
+
+
 ```{r echo=FALSE}
-color.me <- which( (params$table1)$'p-Value'<0.05)
+color.me <- which((params$table1)$'p-Value'<0.05)
 params$table1 %>% 
   kbl() %>%
   kable_classic(full_width = T, html_font = "Cambria") %>% 
-  kable_styling(bootstrap_options = c("hover", "condensed"),
-                font_size = 22) %>% 
   row_spec(color.me, color = "black", background = "#fffd8d")
 
 ```
@@ -292,13 +293,11 @@ Conclusion
 .right-column[
 
 ```{r echo=FALSE}
-color.me <- which( (params$table2)$'p-Value'<0.05)
+color.me <- which((params$table2)$'p-Value'<0.05)
 
 params$table2 %>%
   kbl() %>%
   kable_classic(full_width = T, html_font = "Cambria") %>% 
-  kable_styling(bootstrap_options = c("striped", "hover", "condensed"),
-                font_size = 22) %>% 
   row_spec(color.me, color = "black", background = "#fffd8d")
 ```                
 ]
