@@ -196,6 +196,13 @@ cldList(comparison = post.hoc2$Comparison,
         p.value    = post.hoc2$p.adjust, threshold  = 0.05) 
 
 
+# adding p-values of the previous research to our tables
+
+table1 <- table1 %>% mutate("previous p-Value" = c(0.364, 0.341, 0.000, 0.000, 0.440, 0.329, 0.054))
+table2 <- table2 %>% mutate("previous p-Value" = c(0.001, 0.000, 0.170, 0.485, 0.000, 0.163, 0.283))
+table3 <- table3 %>% mutate("previous p-Value" = c(0.201, 0.025, 0.087, 0.047, 0.072, 0.020, 0.044))
+
+
 # rmd ---------------------------------------------------------------------
 
 # In order to avoid repeating previous codes in rmd file, 
