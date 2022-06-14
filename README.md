@@ -72,6 +72,8 @@ Exchange)
     .
     ├── fig                           # Folder for images and figures
     │   ├── Iran_CPI.png              # Iran's CPI graph
+    │   ├── NY_Yahoo.png              # New York Times image
+    │   ├── TSE_index.png             # TSE index graph
     └──
     ├── in                            # Input folder for survey's data
     │   ├── survey_data.csv           # Surveyed data from the investors in May 2022
@@ -83,6 +85,7 @@ Exchange)
     └──
     ├── out                           # Presentation
     │   ├── presentation.HTML         # HTML for presentation
+    │   ├── xaringan-themer.css       # css for theme presentation    
     └──
     ├── LICENSE
     └── README.md
